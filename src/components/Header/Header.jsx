@@ -8,7 +8,7 @@ import { Outlet } from "react-router-dom"
 export const Header = () => {
   return (
     <>
-      <div className="header-container">
+      <div className="header_container">
           <Navbar />
           <Logo />
           <SignUpSignIn />

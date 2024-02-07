@@ -1,10 +1,11 @@
 *, *::before, *::after {
-    font-family: sans-serif;
+    font-family: system-ui, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 body {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
+    background-color: #F0F2F4;
 }
