@@ -1,24 +1,27 @@
 
 import { NavLink } from 'react-router-dom'
 import './Navbar.css'
+import { links } from './links'
 
 
 export const Navbar = () => {
   return (
     <nav className="navbar_container">
         <ul>
-            <li>
-              <NavLink to='/'>Home</NavLink>
-            </li>
-            <li>
-              <NavLink to='/streams'>Streams</NavLink>
-            </li>
-            <li>
-              <NavLink to='/party'>Party</NavLink>
-            </li>
-            <li>
-              <NavLink to='/premium'>Premium</NavLink>
-            </li>
+          {
+            links.map( link => {
+              return (
+                <li key={ link.title }>
+                  <NavLink 
+                    to={ link.to }
+                    className={({ isActive }) => isActive ? "ellipse_decorator active":""}
+                  >
+                    { link.title }
+                  </NavLink>
+                </li>
+              )
+            } )
+          }
         </ul>
     </nav>
   )
