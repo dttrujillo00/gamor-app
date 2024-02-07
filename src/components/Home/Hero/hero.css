@@ -1,0 +1,4 @@
+.hero_title {
+    display: flex;
+    flex-direction: column;
+}

@@ -4,16 +4,19 @@
 
 .navbar_container ul {
     display: flex;
-    list-style: none;
 }
 
 .navbar_container ul li a {
-    text-decoration: none;
-    color: #5B5D5F;
+    color: var(--link_color);
     padding: 0 1rem;
     position: relative;
 }
 
 .navbar_container ul li a.active {
-    color: #975AF1;
+    color: var(--ellipse_decorator_purple);
+}
+
+#darkmode {
+    margin: 0 .5rem;
+    cursor: pointer;
 }
