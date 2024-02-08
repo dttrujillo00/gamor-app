@@ -1,26 +1,10 @@
-
 import { NavLink } from 'react-router-dom'
-import './Navbar.css'
 import { links } from './links'
-import { useState } from 'react'
+import './Navbar.css'
+import { DarkLight } from '../DarkLight/DarkLight'
 
 
 export const Navbar = () => {
-
-  const [darkmode, setDarkmode] = useState(false);
-  // const icon = document.querySelector('#darkmode');
-
-  // if (darkmode) {
-  //   icon.classList.replace('bx-moon', 'bx-sun')
-  //   document.body.classList.add('active')
-  // } else {
-  //   icon.classList.replace('bx-sun', 'bx-moon')
-  //   document.body.classList.remove('active')
-  // }
-
-  const onChangeMode = () => {
-    setDarkmode(!darkmode);
-  }
 
   return (
     <nav className="navbar_container">
@@ -39,10 +23,7 @@ export const Navbar = () => {
               )
             } )
           }
-          <li>
-            <i onClick={ onChangeMode } className="bx bx-moon bx-sm" id='darkmode'></i>
-          </li>
-          {/* <div className="bx bx-moon" id="darkmode"></div> */}
+          <DarkLight />
         </ul>
 
     </nav>
