@@ -1,3 +1,7 @@
+.hero_container {
+    background-color: var(--bg_card_color);
+}
+
 .hero_title {
     display: flex;
     flex-direction: column;

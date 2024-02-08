@@ -2,23 +2,24 @@
 import { NavLink } from 'react-router-dom'
 import './Navbar.css'
 import { links } from './links'
+import { useState } from 'react'
 
 
 export const Navbar = () => {
 
-  // const darkmode = document.querySelector('#darkmode')
+  const [darkmode, setDarkmode] = useState(false);
+  // const icon = document.querySelector('#darkmode');
 
-  const onChangeMode = (event) => {
+  // if (darkmode) {
+  //   icon.classList.replace('bx-moon', 'bx-sun')
+  //   document.body.classList.add('active')
+  // } else {
+  //   icon.classList.replace('bx-sun', 'bx-moon')
+  //   document.body.classList.remove('active')
+  // }
 
-    const icon = event.target;
-
-    if(icon.classList.contains('bx-moon')) {
-      icon.classList.replace('bx-moon', 'bx-sun')
-      document.body.classList.add('active')
-    } else {
-      icon.classList.replace('bx-sun', 'bx-moon')
-      document.body.classList.remove('active')
-    }
+  const onChangeMode = () => {
+    setDarkmode(!darkmode);
   }
 
   return (

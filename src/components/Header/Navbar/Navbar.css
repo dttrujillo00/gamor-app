@@ -9,11 +9,10 @@
 .navbar_container ul li a {
     color: var(--link_color);
     padding: 0 1rem;
-    position: relative;
 }
 
 .navbar_container ul li a.active {
-    color: var(--ellipse_decorator_purple);
+    color: var(--purple_color);
 }
 
 #darkmode {
