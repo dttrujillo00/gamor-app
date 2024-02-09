@@ -1,0 +1,21 @@
+.gameItem {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.gameItem p {
+    font-size: small;
+    margin-right: 1rem;
+    color: var(--text_color);
+}
+
+.gameItem i {
+    background-color: rgba(0, 0, 0, .1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    padding: 5px;
+    cursor: pointer;
+}

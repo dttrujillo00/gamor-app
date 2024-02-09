@@ -4,6 +4,7 @@
 
 .navbar_container ul {
     display: flex;
+    list-style: none;
 }
 
 .navbar_container ul li a {

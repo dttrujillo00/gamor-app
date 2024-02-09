@@ -1,0 +1,38 @@
+form {
+    background-color: white;
+    box-shadow: 1px 1px 3px black;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.search_input_container {
+    display: flex;
+    align-items: center;
+}
+
+.search_input_container input {
+    margin: .5rem 0;
+    padding: .5rem;
+    border: none;
+    flex: 90%;
+}
+
+.search_input_container i{
+    flex: 10%;
+    color: var(--link_color);
+}
+
+input:focus {
+    outline: none;
+}
+
+.search_btn {
+    width: 100%;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: .3rem;
+    border: none;
+    padding: .7rem;
+    cursor: pointer;
+}
