@@ -1,7 +1,8 @@
 .sign_container {
-    flex: 1 1 35%;
+    /* flex: 1 1 35%; */
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .sign_container.reverse {
@@ -18,6 +19,7 @@ button {
     margin: 0 .5rem;
     background-color: transparent;
     color: var(--text_color);
+    height: fit-content;
 }
 
 .signup_btn {

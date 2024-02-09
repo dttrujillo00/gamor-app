@@ -1,8 +1,26 @@
 .hero_container {
     background-color: var(--bg_card_color);
+    width: 100%;
+    flex: 33%;
+    padding: 3rem 1.5rem;
+    border-radius: 1rem 0 0 1rem;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .hero_title {
     display: flex;
     flex-direction: column;
+    width: fit-content;
+}
+
+.hero_title span {
+    font-size: 3.8rem;
+}
+
+.hero_subtitle {
+    /* margin: 1rem 0; */
 }

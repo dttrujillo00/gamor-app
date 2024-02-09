@@ -1,7 +1,7 @@
-
+import './Panel.css'
 
 export const Panel = () => {
   return (
-    <div>Panel</div>
+    <div className="panel_container">Panel</div>
   )
 }

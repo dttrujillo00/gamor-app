@@ -3,8 +3,8 @@ import { useEffect, useState } from "react"
 
 export const DarkLight = () => {
 
-    const [themeStatus, setThemeStatus] = useState('dark');
-    const [themeIcon, setThemeIcon] = useState('bx-sun');
+    const [themeStatus, setThemeStatus] = useState('light');
+    const [themeIcon, setThemeIcon] = useState('bx-moon');
 
     useEffect(() => {
 

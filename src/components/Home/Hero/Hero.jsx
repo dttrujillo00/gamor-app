@@ -1,3 +1,4 @@
+import { SignUpSignIn } from '../../Header/SignUpSignIn/SignUpSignIn'
 import './Hero.css'
 
 export const Hero = () => {
@@ -13,6 +14,8 @@ export const Hero = () => {
         <div className="hero_subtitle">
           <p>gamor now has stream party platform</p>
         </div>
+
+        <SignUpSignIn />
     </div>
   )
 }

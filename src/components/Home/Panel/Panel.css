@@ -1,0 +1,6 @@
+.panel_container {
+    background-color: var(--bg_card_color);
+    flex: 33%;
+    height: 100%;
+    border-radius: 0 1rem 1rem 0;
+}
