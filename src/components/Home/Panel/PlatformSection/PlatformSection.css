@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
+    background-color: var(--bg_cards_panel);
     box-shadow: 1px 1px 3px black;
     border-radius: 1rem;
     margin-top: 1rem;
@@ -17,6 +17,10 @@
 
 .radio_container.checked {
     background-color: rgba(0, 0, 0, .1);
+}
+
+body[data-theme=dark] .radio_container.checked {
+    background-color: gray;
 }
 
 .radio_container label {

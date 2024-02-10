@@ -16,7 +16,7 @@ export const GameList = ({ searchedGame = '', setGameToShow }) => {
                             games.map( game => {
                                 return (
                                     <li key={ game.id }>
-                                        <GameItem name={ game.name } image={ game.imageURL } setGameToShow={ setGameToShow } />
+                                        <GameItem name={ game.name } image={ game.imageURL } platforms={ game.platforms } setGameToShow={ setGameToShow } />
                                     </li>
                                 )
                             } )

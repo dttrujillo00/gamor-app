@@ -10,7 +10,8 @@ export const Home = () => {
 
   const [featuredGame, setFeaturedGame] = useState({
     name: 'Fortnite Battle Royale',
-    image: 'https://media.rawg.io/media/games/dcb/dcbb67f371a9a28ea38ffd73ee0f53f3.jpg'
+    image: 'https://media.rawg.io/media/games/dcb/dcbb67f371a9a28ea38ffd73ee0f53f3.jpg',
+    platforms: ['PC','PlayStation','Xbox','iOS','Android','Apple Macintosh','Nintendo']
   }) 
 
   return (

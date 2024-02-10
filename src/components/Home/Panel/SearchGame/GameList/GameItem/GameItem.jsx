@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types'
 import './GameItem.css'
 
-export const GameItem = ({ name, image, setGameToShow }) => {
+export const GameItem = ({ name, image, platforms, setGameToShow }) => {
 
   const updateFeaturedGame = () => {
     setGameToShow({
       name,
-      image
+      image,
+      platforms
     })
   }
 
@@ -21,5 +22,6 @@ export const GameItem = ({ name, image, setGameToShow }) => {
 GameItem.propTypes = {
   name: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
+  platforms: PropTypes.array.isRequired,
   setGameToShow: PropTypes.func.isRequired
 }

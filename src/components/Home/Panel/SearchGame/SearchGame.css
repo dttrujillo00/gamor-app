@@ -1,5 +1,5 @@
 .searching_form {
-    background-color: white;
+    background-color: var(--bg_cards_panel);
     box-shadow: 1px 1px 3px black;
     border-radius: 1rem;
     padding: 1rem;
@@ -19,6 +19,8 @@
     padding: .5rem;
     border: none;
     flex: 90%;
+    background-color: transparent;
+    color: var(--text-color);
 }
 
 .search_input_container i{
@@ -32,7 +34,7 @@ input:focus {
 
 .search_btn {
     width: 100%;
-    background-color: var(--black);
+    background-color: var(--text_color);
     color: var(--white);
     border-radius: .3rem;
     border: none;

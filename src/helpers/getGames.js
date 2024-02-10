@@ -7,8 +7,11 @@ export const getGames = async (game) => {
         id: game.id,
         name: game.name,
         imageURL: game.background_image,
-        platforms: game.parent_platforms,
+        platforms: game.parent_platforms.map( ({platform})  => platform.name),
     }) )
 
+    // console.log(games[0].platforms[0].platform.name)
+    // console.log(games[0])
+    // console.log(games[0].platforms)
     return games;
 }
