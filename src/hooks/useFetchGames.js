@@ -15,10 +15,9 @@ export const useFetchGames = (game) => {
 
     useEffect(() => {
       
-        setIsLoading(true)
         getData();
     
-    }, [game]);
+    }, []);
 
     return {
         games,

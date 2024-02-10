@@ -1,9 +1,9 @@
 import { useFetchGames } from "../../../../../hooks/useFetchGames"
 import { GameItem } from "./GameItem.jsx/GameItem"
-
+import PropTypes from 'prop-types'
 import './GameList.css'
 
-export const GameList = ({ searchedGame = '' }) => {
+export const GameList = ({ searchedGame = '', setGameToShow }) => {
 
     const { games, isLoading } = useFetchGames(searchedGame)
     
@@ -16,7 +16,7 @@ export const GameList = ({ searchedGame = '' }) => {
                             games.map( game => {
                                 return (
                                     <li key={ game.id }>
-                                        <GameItem name={ game.name } image={ game.imageURL } />
+                                        <GameItem name={ game.name } image={ game.imageURL } setGameToShow={ setGameToShow } />
                                     </li>
                                 )
                             } )
@@ -26,4 +26,10 @@ export const GameList = ({ searchedGame = '' }) => {
             }
         </div>
     )
+}
+
+GameList.propTypes = {
+    searchedGame: PropTypes.string.isRequired,
+    setGameToShow: PropTypes.func
+
 }

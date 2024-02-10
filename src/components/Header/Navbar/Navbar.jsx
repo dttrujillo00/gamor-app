@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import { links } from './links'
-import './Navbar.css'
 import { DarkLight } from '../DarkLight/DarkLight'
+import './Navbar.css'
 
 
 export const Navbar = () => {

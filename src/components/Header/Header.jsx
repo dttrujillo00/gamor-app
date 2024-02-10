@@ -1,9 +1,8 @@
 import { Logo } from "./Logo/Logo"
 import { Navbar } from "./Navbar/Navbar"
 import { SignUpSignIn } from "./SignUpSignIn/SignUpSignIn"
-
-import './Header.css'
 import { Outlet } from "react-router-dom"
+import './Header.css'
 
 export const Header = () => {
   return (

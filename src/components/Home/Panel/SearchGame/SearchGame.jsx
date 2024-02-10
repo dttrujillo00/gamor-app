@@ -1,9 +1,9 @@
 import { useState } from "react"
 import { GameList } from "./GameList/GameList";
-
+import PropTypes from 'prop-types'
 import './SearchGame.css'
 
-export const SearchGame = () => {
+export const SearchGame = ({ setGameToShow }) => {
 
     const [inputValue, setInputValue] = useState('')
     const [searchedGame, setSearchedGame] = useState('')
@@ -18,6 +18,8 @@ export const SearchGame = () => {
         if (cleanNewValue <= 1) return;
         setSearchedGame(cleanNewValue)
     }
+
+    
 
   return (
     <form onSubmit={ onSubmit } >
@@ -34,8 +36,12 @@ export const SearchGame = () => {
 
         <hr />
 
-        <GameList searchedGame={ searchedGame }/>
+        <GameList searchedGame={ searchedGame } setGameToShow={ setGameToShow } />
         <button type="submit" className="search_btn">Search Now</button>
     </form>
   )
+}
+
+SearchGame.propTypes = {
+    setGameToShow: PropTypes.func
 }
