@@ -1,7 +1,9 @@
-
+import './Party.css'
 
 export const Party = () => {
   return (
-    <div>Party</div>
+    <div className='other_pages'>
+      <h2>This is the Party&apos;s page</h2>
+    </div>
   )
 }

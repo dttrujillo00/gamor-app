@@ -67,3 +67,11 @@ body {
 .orange_color {
     color: var(--orange_color);
 }
+
+.other_pages{
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--link_color);
+}
