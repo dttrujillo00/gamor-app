@@ -1,4 +1,4 @@
-import { useFetchGames } from "../../../../hooks/useFetchGames"
+import { useFetchGames } from "../../../../../hooks/useFetchGames"
 import { GameItem } from "./GameItem.jsx/GameItem"
 
 import './GameList.css'
@@ -6,11 +6,7 @@ import './GameList.css'
 export const GameList = ({ searchedGame = '' }) => {
 
     const { games, isLoading } = useFetchGames(searchedGame)
-
-    if (!isLoading) {
-        sessionStorage.setItem('featured_game', games[0].name)
-        sessionStorage.setItem('featured_image', games[0].imageURL)
-    }
+    
     return (
         <div className="gameList_container">
             {

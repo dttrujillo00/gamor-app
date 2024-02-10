@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { GameList } from "../GameList/GameList";
+import { GameList } from "./GameList/GameList";
 
 import './SearchGame.css'
 
