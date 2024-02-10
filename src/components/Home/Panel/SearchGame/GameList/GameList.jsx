@@ -1,5 +1,5 @@
 import { useFetchGames } from "../../../../../hooks/useFetchGames"
-import { GameItem } from "./GameItem.jsx/GameItem"
+import { GameItem } from "./GameItem/GameItem"
 import PropTypes from 'prop-types'
 import './GameList.css'
 

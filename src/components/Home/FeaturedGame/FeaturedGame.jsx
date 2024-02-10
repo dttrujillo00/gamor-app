@@ -3,8 +3,6 @@ import './FeaturedGame.css'
 
 export const FeaturedGame = ({ featuredGame }) => {
 
-  console.log(featuredGame)
-
   return (
     <div className="featured_container">
       <p>{featuredGame.name}</p>

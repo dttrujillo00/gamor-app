@@ -1,0 +1,29 @@
+.platformSection_form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 1px 1px 3px black;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    padding: .3rem;
+}
+
+.radio_container {
+    flex: 33%;
+    border-radius: 1rem;
+    padding: .2rem;
+}
+
+.radio_container.checked {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.radio_container label {
+   display: block;
+   text-align: center;
+}
+
+.radio_container input {
+    display: none;
+}

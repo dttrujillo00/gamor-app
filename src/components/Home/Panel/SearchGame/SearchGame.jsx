@@ -21,7 +21,7 @@ export const SearchGame = ({ setGameToShow }) => {
     
 
   return (
-    <form onSubmit={ onSubmit } >
+    <form className="searching_form" onSubmit={ onSubmit } >
 
         <div className="search_input_container">
             <input 
@@ -36,7 +36,9 @@ export const SearchGame = ({ setGameToShow }) => {
         <hr />
 
         <GameList searchedGame={ searchedGame } setGameToShow={ setGameToShow } />
-        <button type="submit" className="search_btn">Search Now</button>
+        <div>
+            <button type="submit" className="search_btn">Search Now</button>
+        </div>
     </form>
   )
 }

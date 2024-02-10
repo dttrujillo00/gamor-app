@@ -3,12 +3,22 @@
     flex: 33%;
     height: 100%;
     border-radius: 0 1rem 1rem 0;
+    padding: 2rem 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem 1.5rem;
+    justify-content: center;
 }
 
-ol {
+.panel_container > ol {
     list-style: decimal-leading-zero;
+    height: 100%;
+}
+
+.panel_container > ol > li{
+    margin-bottom: 1rem;
+}
+
+.panel_container > ol > li:last-child {
+    margin-bottom: 0;
 }

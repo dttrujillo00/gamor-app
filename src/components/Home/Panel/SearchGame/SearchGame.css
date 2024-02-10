@@ -1,9 +1,12 @@
-form {
+.searching_form {
     background-color: white;
     box-shadow: 1px 1px 3px black;
     border-radius: 1rem;
     padding: 1rem;
     margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .search_input_container {

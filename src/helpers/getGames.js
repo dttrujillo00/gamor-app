@@ -6,7 +6,8 @@ export const getGames = async (game) => {
     const games = results.map( game => ({
         id: game.id,
         name: game.name,
-        imageURL: game.background_image
+        imageURL: game.background_image,
+        platforms: game.parent_platforms,
     }) )
 
     return games;
