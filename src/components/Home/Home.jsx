@@ -6,6 +6,8 @@ import './Home.css'
 
 export const Home = () => {
 
+  localStorage.setItem('lastPath', window.location.pathname)
+
   const [featuredGame, setFeaturedGame] = useState({
     name: 'Fortnite Battle Royale',
     image: 'https://media.rawg.io/media/games/dcb/dcbb67f371a9a28ea38ffd73ee0f53f3.jpg'

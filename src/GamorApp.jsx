@@ -1,25 +1,25 @@
-import { Route, Routes } from "react-router-dom"
+import { useEffect, useReducer } from "react"
+import { authReducer } from "./auth/authReducer"
+import { AuthContext } from "./auth/AuthContext"
+import { AppRouter } from "./routers/AppRouter"
 
-import { Header } from "./components/Header/Header"
-import { Home } from "./components/Home/Home"
-import { Streams } from "./components/Streams/Streams"
-import { Party } from "./components/Party/Party"
-import { Premium } from "./components/Premium/premium"
-import { ErrorPage } from "./components/ErrorPage/ErrorPage"
-
+const init = () => {
+  return JSON.parse(localStorage.getItem('user')) || { logged: false };
+}
 
 export const GamorApp = () => {
+
+  const [user, dispatch] = useReducer(authReducer, {}, init)
+
+  useEffect(() => {
+    localStorage.setItem('user', JSON.stringify(user))
+  }, [user])
+  
+
   return (
-    <>
-      <Routes>
-        <Route path="/" element={ <Header /> }>
-          <Route index element={ <Home /> } />
-          <Route path="streams" element={ <Streams /> } />
-          <Route path="party" element={ <Party /> } />
-          <Route path="premium" element={ <Premium /> } />
-          <Route path="*" element={ <ErrorPage /> } />
-        </Route>
-      </Routes>
-    </>
+
+    <AuthContext.Provider value={{ user, dispatch }}>
+      <AppRouter />
+    </AuthContext.Provider>
   )
 }
