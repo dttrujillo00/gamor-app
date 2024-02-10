@@ -3,3 +3,7 @@
     overflow-y: scroll;
     margin: 1rem 0;
 }
+
+.loading_text {
+    color: var(--link_color);
+}

@@ -14,9 +14,8 @@ export const SearchGame = ({ setGameToShow }) => {
 
     const onSubmit = ( event ) => {
         event.preventDefault();
-        const cleanNewValue = inputValue.trim();
-        if (cleanNewValue <= 1) return;
-        setSearchedGame(cleanNewValue)
+        const cleanSearchedGame = inputValue.trim();
+        setSearchedGame(cleanSearchedGame)
     }
 
     
