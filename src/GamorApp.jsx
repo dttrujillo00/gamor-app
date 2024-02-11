@@ -4,7 +4,7 @@ import { AuthContext } from "./auth/AuthContext"
 import { AppRouter } from "./routers/AppRouter"
 
 const init = () => {
-  return JSON.parse(localStorage.getItem('user')) || { logged: false };
+  return JSON.parse(sessionStorage.getItem('user')) || { logged: false };
 }
 
 export const GamorApp = () => {
@@ -12,7 +12,7 @@ export const GamorApp = () => {
   const [user, dispatch] = useReducer(authReducer, {}, init)
 
   useEffect(() => {
-    localStorage.setItem('user', JSON.stringify(user))
+    sessionStorage.setItem('user', JSON.stringify(user))
   }, [user])
   
 

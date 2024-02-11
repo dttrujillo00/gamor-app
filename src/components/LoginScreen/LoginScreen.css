@@ -1,0 +1,27 @@
+.loginScreen {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg_color);
+}
+
+.loginScreen form {
+    background-color: var(--bg_card_color);
+    box-shadow: 1px 1px 3px gray;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.loginScreen form h1 {
+    margin-bottom: 1rem;
+}
+
+.loginScreen form button {
+    margin: 0 auto;
+    display: block;
+    padding: .3rem;
+    background-color: transparent;
+    border-radius: .5rem;
+    cursor: pointer;
+}

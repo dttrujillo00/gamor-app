@@ -2,6 +2,7 @@ import { useContext } from "react"
 import { AuthContext } from "../../auth/AuthContext"
 import { useNavigate } from "react-router-dom"
 import { types } from "../../types/types";
+import './LoginScreen.css'
 
 
 export const LoginScreen = () => {
@@ -23,16 +24,18 @@ export const LoginScreen = () => {
     }
 
   return (
-    <>
-        <h1>Login</h1>
+    <div className="loginScreen">
 
-        <hr />
+        <form>
+            <h1>Login</h1>
 
-        <button
-            onClick={ handleLogin }
-        >
-            Login
-        </button>
-    </>
+            <button
+                onClick={ handleLogin }
+            >
+                Login
+            </button>
+        </form>
+
+    </div>
   )
 }
