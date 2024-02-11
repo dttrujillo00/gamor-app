@@ -1,6 +1,9 @@
 .gameList_container {
     overflow-y: scroll;
     max-height: 250px;
+    width: 100%;
+    margin: .8rem 0;
+    padding: 0 1rem 0 2rem;
 }
 
 .loading_text {

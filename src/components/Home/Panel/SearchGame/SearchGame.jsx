@@ -36,7 +36,7 @@ export const SearchGame = ({ setGameToShow }) => {
         <hr />
 
         <GameList searchedGame={ searchedGame } setGameToShow={ setGameToShow } />
-        <div>
+        <div className="submit_btn_container">
             <button type="submit" className="search_btn">Search Now</button>
         </div>
     </form>
