@@ -8,11 +8,11 @@ export const Panel = ({ setGameToShow }) => {
     <div className="panel_container">
       <ol>
         <li>
-          Choose platform
+          <p> <span>01.</span> Choose platform</p>
           <PlatformSection />
         </li>
         <li>
-          Searching Game
+          <p> <span>02.</span> Searching Game</p>
           <SearchGame setGameToShow={ setGameToShow } />
         </li>
       </ol>

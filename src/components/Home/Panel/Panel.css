@@ -11,12 +11,16 @@
 }
 
 .panel_container > ol {
-    list-style: decimal-leading-zero;
+    list-style: none;
     height: 100%;
 }
 
-.panel_container > ol > li{
+.panel_container > ol > li {
     margin-bottom: 1rem;
+}
+
+.panel_container > ol > li > p > span {
+    color: var(--link_color);
 }
 
 .panel_container > ol > li:last-child {
