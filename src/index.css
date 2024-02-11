@@ -38,6 +38,10 @@ body {
     --white: #000;
 }
 
+a {
+    color: var(--link_color);
+}
+
 .ellipse_decorator {
     position: relative;
 }
