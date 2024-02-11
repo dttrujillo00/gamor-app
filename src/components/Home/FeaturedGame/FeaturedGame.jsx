@@ -5,18 +5,19 @@ import { useEffect, useState } from 'react';
 export const FeaturedGame = ({ featuredGame }) => {
 
   const [isLoadingImage, setIsLoadingImage] = useState(false)
+
   useEffect(() => {
+
     setIsLoadingImage(true)
   
   }, [featuredGame])
   
-
-  const { name, image, platforms } = featuredGame;
-
   const onLoadImage = () => {
     setIsLoadingImage(false)
   }
-
+  
+  const { name, image, platforms } = featuredGame;
+  
   return (
     <div className="featured_container">
 

@@ -10,7 +10,7 @@ export const GameList = ({ searchedGame = '', setGameToShow }) => {
     return (
         <div className="gameList_container">
             {
-                isLoading ? ( <p className="loading_text">Loading games</p> ) : (
+                isLoading ? ( <p className="loading_text">Loading games...</p> ) : (
                     <ol>
                         {
                             games.map( game => {

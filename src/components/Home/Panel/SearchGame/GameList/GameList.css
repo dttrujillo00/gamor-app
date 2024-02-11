@@ -5,4 +5,16 @@
 
 .loading_text {
     color: var(--link_color);
+    padding: 1rem;
+    animation: flashEffect 1s ease-in-out infinite alternate;
+}
+
+@keyframes flashEffect {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
 }
