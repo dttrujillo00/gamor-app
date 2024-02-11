@@ -4,13 +4,13 @@ import { useEffect, useState } from 'react';
 
 export const FeaturedGame = ({ featuredGame }) => {
 
-  const [isLoadingImage, setIsLoadingImage] = useState(false)
+  const [isLoadingImage, setIsLoadingImage] = useState(true)
 
   useEffect(() => {
-
     setIsLoadingImage(true)
-  
+
   }, [featuredGame])
+  
   
   const onLoadImage = () => {
     setIsLoadingImage(false)
