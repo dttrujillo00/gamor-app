@@ -1,7 +1,6 @@
 .featured_container {
     background-color: var(--purple_color);
     flex: 33%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

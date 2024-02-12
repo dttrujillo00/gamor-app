@@ -3,6 +3,7 @@ import { Hero } from "./Hero/Hero"
 import { Panel } from "./Panel/Panel"
 import { useState } from "react"
 import './Home.css'
+import { TrendingCategories } from "./TrendingCategories/TrendingCategories"
 
 export const Home = () => {
 
@@ -19,6 +20,7 @@ export const Home = () => {
       <Hero />
       <FeaturedGame featuredGame={ featuredGame } />
       <Panel setGameToShow={ setFeaturedGame } />
+      <TrendingCategories />
     </div>
   )
 }

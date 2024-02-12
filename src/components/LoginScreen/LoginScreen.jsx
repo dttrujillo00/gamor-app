@@ -66,8 +66,8 @@ export const LoginScreen = () => {
             <h1>Sign in</h1>
 
             <div className="inputs_container">
-                <input onChange={ onInputChange } value={ username } name="username" type="text" placeholder="username" />
-                <input onChange={ onInputChange } value={ password } name="password" type="password" placeholder="password" />
+                <input onChange={ onInputChange } value={ username } name="username" type="text" placeholder="username" autoComplete="false" />
+                <input onChange={ onInputChange } value={ password } name="password" type="password" placeholder="password" autoComplete="false" />
             </div>
 
 
