@@ -21,8 +21,6 @@
 }
 
 body {
-    width: 95%;
-    margin: 0 auto;
     background-color: var(--bg_color);
     color: var(--text_color);
 }
@@ -40,6 +38,11 @@ body {
 
 a {
     color: var(--link_color);
+}
+
+#dashboard {
+    width: 95%;
+    margin: 0 auto;
 }
 
 .ellipse_decorator {

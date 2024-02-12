@@ -12,6 +12,8 @@ export const LoginScreen = () => {
     const navigate = useNavigate();
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
+    const [isInvalid, setIsInvalid] = useState(false)
+    
 
     const verifyCredentials = (username, password) => {
 
@@ -55,6 +57,8 @@ export const LoginScreen = () => {
             })
     
             navigate(lastPath, { replace: true });
+        } else {
+            setIsInvalid(true)
         }
 
     }
@@ -66,17 +70,24 @@ export const LoginScreen = () => {
             <h1>Sign in</h1>
 
             <div className="inputs_container">
-                <input onChange={ onInputChange } value={ username } name="username" type="text" placeholder="username" autoComplete="false" />
-                <input onChange={ onInputChange } value={ password } name="password" type="password" placeholder="password" autoComplete="false" />
+                <input onChange={ onInputChange } value={ username } name="username" type="text" placeholder="username" autoComplete="off" required />
+                <input onChange={ onInputChange } value={ password } name="password" type="password" placeholder="password" autoComplete="off" required />
             </div>
 
 
             <button
                 type='submit'
+                className=""
             >
                 Sign in
             </button>
+            {
+                isInvalid && (
+                    <p className="invalidCredentials_alert" >Invalid credentials</p>
+                )
+            }
         </form>
+
 
     </div>
   )

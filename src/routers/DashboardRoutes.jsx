@@ -9,7 +9,7 @@ import { ErrorPage } from "../components/ErrorPage/ErrorPage"
 
 export const DashboardRoutes = () => {
   return (
-    <>
+    < div id="dashboard">
         <Routes>
          <Route path="/" element={ <Header /> }>
            <Route index element={ <Home /> } />
@@ -19,6 +19,6 @@ export const DashboardRoutes = () => {
            <Route path="*" element={ <ErrorPage /> } />
          </Route>
        </Routes>
-    </>
+    </ div>
   )
 }
