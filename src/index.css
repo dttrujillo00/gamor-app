@@ -40,6 +40,11 @@ a {
     color: var(--link_color);
 }
 
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+
 #dashboard {
     width: 95%;
     margin: 0 auto;

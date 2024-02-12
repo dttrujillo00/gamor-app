@@ -13,6 +13,7 @@ export const LoginScreen = () => {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
     const [isInvalid, setIsInvalid] = useState(false)
+    const [showPass, setShowPass] = useState(false)
     
 
     const verifyCredentials = (username, password) => {
@@ -63,6 +64,10 @@ export const LoginScreen = () => {
 
     }
 
+    const showHidePassoword = () => {
+        setShowPass(!showPass)
+    }
+
   return (
     <div className="loginScreen">
 
@@ -71,7 +76,10 @@ export const LoginScreen = () => {
 
             <div className="inputs_container">
                 <input onChange={ onInputChange } value={ username } name="username" type="text" placeholder="username" autoComplete="off" required />
-                <input onChange={ onInputChange } value={ password } name="password" type="password" placeholder="password" autoComplete="off" required />
+                <div className="password_input">
+                    <input onChange={ onInputChange } value={ password } name="password" type={ showPass ? 'text' : 'password' } placeholder="password" autoComplete="off" required  />
+                    <i onClick={ showHidePassoword } className={ showPass ? 'bx bx-hide bx-sm' : 'bx bx-show bx-sm' }></i>
+                </div>
             </div>
 
 

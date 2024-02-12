@@ -51,7 +51,7 @@
 .loginScreen form .inputs_container input {
     display: block;
     margin-bottom: .8rem;
-    padding: .5rem;
+    padding: .5rem 25px .5rem .5rem;
     border: none;
     border-bottom: 2px solid white;
     background-color: transparent;
@@ -91,6 +91,22 @@
     padding: .5rem;
     border-radius: 1rem;
     animation: fadeInOut 3s linear forwards;
+}
+
+.password_input {
+    position: relative;
+}
+
+.password_input i {
+    content: '';
+    position: absolute;
+    right: -25px;
+    top: 0;
+    width: 50px;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    color: white;
 }
 
 @keyframes fadeInOut {
