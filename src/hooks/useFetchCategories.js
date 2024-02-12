@@ -7,7 +7,7 @@ export const useFetchCategories = () => {
     const [categories, setCategories] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
 
-    const getData = async () => {
+    const getDataCategories = async () => {
         const newCategories = await getCategories();
         setCategories(newCategories)
         setIsLoading(false)
@@ -15,7 +15,7 @@ export const useFetchCategories = () => {
 
     useEffect(() => {
         
-        getData();
+        getDataCategories();
     
     }, []);
 

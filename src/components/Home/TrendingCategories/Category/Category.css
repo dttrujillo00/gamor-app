@@ -62,3 +62,16 @@
     z-index: 3;
     background-image: none !important;
 }
+
+@media screen and (max-width: 650px) {
+    .category_container {
+        flex: 25%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .category_container {
+        flex: 100%;
+        margin-right: 0;
+    }
+}

@@ -1,5 +1,4 @@
 .sign_container {
-    /* flex: 1 1 35%; */
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -9,6 +8,7 @@
 .sign_container.reverse {
     justify-content: flex-start;
     flex-direction: row-reverse;
+    justify-content: center;
 }
 
 .signup_btn, .signin_btn {

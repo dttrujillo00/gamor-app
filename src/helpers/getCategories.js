@@ -3,12 +3,5 @@ export const getCategories = async () => {
     const resp = await fetch(url);
     const { results } = await resp.json();
 
-    // const games = results.map( game => ({
-    //     id: game.id,
-    //     name: game.name,
-    //     imageURL: game.background_image,
-    //     platforms: game.parent_platforms.map( ({platform})  => platform.name),
-    // }) )
-    
     return results;
 }

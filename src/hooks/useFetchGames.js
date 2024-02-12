@@ -7,7 +7,7 @@ export const useFetchGames = (game) => {
     const [games, setGames] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
 
-    const getData = async () => {
+    const getDataGames = async () => {
         const newGames = await getGames(game);
         setGames(newGames)
         setIsLoading(false)
@@ -16,7 +16,7 @@ export const useFetchGames = (game) => {
     useEffect(() => {
       
         setIsLoading(true)
-        getData();
+        getDataGames();
     
     }, [game]);
 

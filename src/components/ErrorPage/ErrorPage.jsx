@@ -3,10 +3,9 @@ import { Link } from "react-router-dom"
 
 export const ErrorPage = () => {
   return (
-    <>
+    <div className="other_pages">
       <h2>Oops!!</h2>
-      <p>This URL doesn&apos;t exist</p>
-      <Link to='/'>Go to home page</Link>
-    </>
+      <Link to='/'> <em>Go to home page</em></Link>
+    </div>
   )
 }
