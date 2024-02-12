@@ -9,9 +9,6 @@ export const getGames = async (game) => {
         imageURL: game.background_image,
         platforms: game.parent_platforms.map( ({platform})  => platform.name),
     }) )
-
-    // console.log(games[0].platforms[0].platform.name)
-    // console.log(games[0])
-    // console.log(games[0].platforms)
+    
     return games;
 }
