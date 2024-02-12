@@ -1,13 +1,10 @@
-/* .navbar_container {
-    position: relative;
-} */
-
 .navbar_container {
     flex: 1 1 35%;
 }
 
 .navbar ul {
     display: flex;
+    align-items: center;
     list-style: none;
 }
 
@@ -41,28 +38,28 @@
     }
 
     .navbar {
-        background-color: var(--white);
+        background-color: var(--bg_color);
         position: absolute;
-        top: 90px;
+        top: 45px;
         left: 0;
-        height: 100vh;
-        width: 200px;
-        z-index: 10;
         padding: 1rem 1.5rem;
-        transform: translateX(-100%);
-        transition: all .5s;
+        transition: all .3s;
+        z-index: -1;
+        opacity: 0;
     }
 
     .navbar.show {
-        transform: translateX(0);
+        top: 90px;
+        z-index: 1;
+        opacity: 1;
     }
 
     .navbar ul {
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
     }
 
     .navbar ul li {
-        padding: 1rem 0;
+        padding: 0 1rem;
     }
 }

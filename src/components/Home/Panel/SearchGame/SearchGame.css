@@ -17,6 +17,7 @@
 .search_input_container input {
     margin: .5rem 0;
     padding: .5rem;
+    font-size: 1rem;
     border: none;
     flex: 90%;
     background-color: transparent;

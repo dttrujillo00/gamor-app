@@ -6,8 +6,7 @@
     border-radius: 1rem 0 0 1rem;
     min-height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -22,5 +21,12 @@
 }
 
 .hero_subtitle {
-    /* margin: 1rem 0; */
+    margin: 2.5rem 0;
+}
+
+.hero_subtitle span {
+    font-weight: bold;
+    border-bottom: 3px solid var(--purple_color);
+    border-radius: -10px;
+    padding-bottom: .3rem;
 }

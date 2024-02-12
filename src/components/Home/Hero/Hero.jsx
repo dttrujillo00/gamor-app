@@ -4,6 +4,7 @@ import './Hero.css'
 export const Hero = () => {
   return (
     <div className='hero_container'>
+      <div className="hero">
         <div className="hero_title">
             <span>start</span>
             <span className='ellipse_decorator orange orange_color'>streaming</span>
@@ -12,10 +13,11 @@ export const Hero = () => {
         </div>
 
         <div className="hero_subtitle">
-          <p>gamor now has stream party platform</p>
+          <p>gamor now has <span>stream party</span>  platform</p>
         </div>
 
-        <SignUpSignIn />
+        <SignUpSignIn order={'reverse'} />
+      </div>
     </div>
   )
 }

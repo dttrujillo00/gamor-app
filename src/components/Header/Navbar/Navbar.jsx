@@ -8,8 +8,7 @@ export const Navbar = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-  const showHideMenu = ({ target }) => {
-    console.log(target.classList)
+  const showHideMenu = () => {
 
     setIsMenuOpen(!isMenuOpen)
 

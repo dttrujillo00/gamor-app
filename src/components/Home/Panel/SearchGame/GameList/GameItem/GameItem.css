@@ -5,7 +5,6 @@
 }
 
 .gameItem p {
-    font-size: small;
     margin-right: 1rem;
     color: var(--text_color);
 }
@@ -15,7 +14,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 2px;
+    border-radius: .5rem;
     padding: 5px;
     cursor: pointer;
 }

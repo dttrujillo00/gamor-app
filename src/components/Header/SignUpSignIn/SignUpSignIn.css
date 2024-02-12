@@ -3,6 +3,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    z-index: 5;
 }
 
 .sign_container.reverse {
@@ -28,4 +29,17 @@
     background-color: black;
     color: white;
     border: 1px solid white;
+}
+
+.sign_container.reverse .signup_btn {
+    color: var(--text_color);
+    border: none;
+    background-color: var(--bg_card_color);
+    box-shadow: 1px 10px 10px rgba(0, 0, 0, .1);
+}
+
+@media screen and (max-width: 410px) {
+    .signin_btn, .signup_btn {
+        padding: .5rem;
+    }
 }

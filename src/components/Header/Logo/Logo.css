@@ -3,6 +3,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    z-index: 5;
 }
 
 .logo_container a {

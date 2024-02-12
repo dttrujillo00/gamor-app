@@ -1,7 +1,24 @@
 .home_container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     height: 80vh;
     /* border: 3px solid black; */
+}
+
+@media screen and (max-width: 1100px) {
+    .home_container > div {
+        flex: 50%;
+    }
+
+    .home_container > div:first-child {
+        flex: 100%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .home_container > div {
+        flex: 100%;
+    }
 }

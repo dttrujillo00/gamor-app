@@ -43,6 +43,7 @@ export const LoginScreen = () => {
     const handleLogin = (event) => {
 
         event.preventDefault();
+        
         if(verifyCredentials(username, password)) {
             const lastPath = localStorage.getItem('lastPath') || '/';
     
@@ -62,7 +63,7 @@ export const LoginScreen = () => {
     <div className="loginScreen">
 
         <form onSubmit={ handleLogin }>
-            <h1>Login</h1>
+            <h1>Sign in</h1>
 
             <div className="inputs_container">
                 <input onChange={ onInputChange } value={ username } name="username" type="text" placeholder="username" />
@@ -73,7 +74,7 @@ export const LoginScreen = () => {
             <button
                 type='submit'
             >
-                Login
+                Sign in
             </button>
         </form>
 
